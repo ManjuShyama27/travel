@@ -11,7 +11,7 @@ checkProfile() async {
   };
 
   var response = await http.get(
-    Uri.parse('https://travel27.herokuapp.com/profile/checkProfile'),
+    Uri.parse(''),
     headers: requestHeaders,
   );
   print(json.decode(response.body));
@@ -32,7 +32,7 @@ getProfileData() async {
   };
 
   var response = await http.get(
-    Uri.parse('https://travel27.herokuapp.com/profile/getData'),
+    Uri.parse(''),
     headers: requestHeaders,
   );
   print(json.decode(response.body));
@@ -54,7 +54,7 @@ deleteTravelPost(String PostID) async {
   };
 
   var response = await http.delete(
-    Uri.parse('https://travel27.herokuapp.com/travelPost/delete/' + PostID),
+    Uri.parse(''),
     headers: requestHeaders,
   );
   print(json.decode(response.body));
@@ -73,7 +73,7 @@ updateTravelPost(String PostID, bool fav) async {
   };
 
   var response = await http.patch(
-    Uri.parse('https://travel27.herokuapp.com/travelPost/update/' + PostID),
+    Uri.parse(''),
     headers: requestHeaders,
     body: jsonEncode(<String, Object>{
       'isFavourite': fav,
@@ -95,7 +95,7 @@ getOtherPost() async {
   };
 
   var response = await http.get(
-    Uri.parse('https://travel27.herokuapp.com/travelPost/getOtherPost'),
+    Uri.parse(''),
     headers: requestHeaders,
   );
   print(json.decode(response.body));
