@@ -1,5 +1,5 @@
 class Config {
-  static const String baseUrl = 'https://travel27.herokuapp.com/';
+  static const String baseUrl = '';
   static const String localUrl = 'http://localhost:5000/';
   static const String registerUser = baseUrl + 'user/register';
   static const String login = baseUrl + 'user/login';
